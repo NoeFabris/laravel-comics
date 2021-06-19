@@ -1,11 +1,17 @@
 <header>
 {{-- Blue line --}}
     <section class='blue_line'>
-        <P>DC POWER VISA</P>
-        <P>ADDITIONAL DC SITES</P>
+
+        <div class='container'>
+
+            <P>DC POWER VISA</P>
+            <P>ADDITIONAL DC SITES</P>
+
+        </div>
+
     </section>
 
-    <nav>
+    <nav class='container'>
         <img src="{{ asset('images/dc-logo.png') }}" alt="">
         <ul>
             <li><a href="">CHARACTERS</a></li>
