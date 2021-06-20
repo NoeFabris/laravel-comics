@@ -1,0 +1,27 @@
+footer{
+    height: 500px;
+    background-color: $bg_color2;
+    .bg-footer-img{
+        // background-image: url(../../../public/images/footer-bg.jpg);
+        background-color: yellow;
+        .container{
+            display: flex;
+            div{
+                padding: $spacing $spacing $spacing 0;
+                h3{
+                    padding: ($spacing) 0;
+                }
+                ul{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+
+            }
+            p{
+                width: 50%;
+            }
+        }
+    }
+}

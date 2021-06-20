@@ -1,0 +1,37 @@
+main{
+    .bg-grey{
+        height: 500px;
+        background-color: $bg_color2;
+    }
+    .bg-blue{
+        background-color: $bg_color1;
+        .blue-menu{
+            display: flex;
+            justify-content: space-around;
+            padding: ($spacing * 2) 0;
+            div{
+                display: flex;
+                align-items: center;
+                img{
+                    max-width: 60px;
+                    max-height: 60px;
+                }
+                p{
+                    color: $text_color2;
+                    padding: $spacing;
+                }
+            }
+        }
+    }
+    .load-more-btn{
+        display: flex;
+        justify-content: center;
+        // align-self: flex-end;
+        button{
+            color: $text_color2;
+            background-color: $bg_color1;
+            padding: $spacing ($spacing * 3);
+            border: none;
+        }
+    }
+}

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
   color: #464646;
+  font-weight: 700;
 }
 
 .container {
@@ -73,5 +74,80 @@ nav ul a {
   height: 300px;
   background-color: yellow;
   background-size: cover;
+}
+
+footer {
+  height: 500px;
+  background-color: #1c1c1c;
+}
+
+footer .bg-footer-img {
+  background-color: yellow;
+}
+
+footer .bg-footer-img .container {
+  display: flex;
+}
+
+footer .bg-footer-img .container div {
+  padding: 15px 15px 15px 0;
+}
+
+footer .bg-footer-img .container div h3 {
+  padding: 15px 0;
+}
+
+footer .bg-footer-img .container div ul {
+  list-style: none;
+}
+
+footer .bg-footer-img .container div ul a {
+  text-decoration: none;
+}
+
+footer .bg-footer-img .container p {
+  width: 50%;
+}
+
+main .bg-grey {
+  height: 500px;
+  background-color: #1c1c1c;
+}
+
+main .bg-blue {
+  background-color: #0282f9;
+}
+
+main .bg-blue .blue-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+main .bg-blue .blue-menu div {
+  display: flex;
+  align-items: center;
+}
+
+main .bg-blue .blue-menu div img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+main .bg-blue .blue-menu div p {
+  color: #ffffff;
+  padding: 15px;
+}
+
+main .load-more-btn {
+  display: flex;
+  justify-content: center;
+}
+
+main .load-more-btn button {
+  color: #ffffff;
+  background-color: #0282f9;
+  padding: 15px 45px;
+  border: none;
 }
 
