@@ -4,8 +4,9 @@
 
         <div class='container'>
 
-            <div class='card'>
-
+            <div class='my-card'>
+                <img src="{{ config('comics.thumb[1]')}}" alt="">
+                <p>{{config('comics.title[1]')}}</p>
             </div>
             <div class='load-more-btn'>
                 <button>LOAD MORE</button>

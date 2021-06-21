@@ -2,25 +2,38 @@ footer{
     height: 500px;
     background-color: $bg_color2;
     .bg-footer-img{
-        // background-image: url(../../../public/images/footer-bg.jpg);
-        background-color: yellow;
-        .container{
+        background-image: url('/images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-color: yellow;
+    .bg-footer-logo{
+        background-image: url('/images/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        img{
+            // overflow: hidden;
+            // width: 800px;
+        }
+    }
+        .footer-col{
             display: flex;
             div{
-                padding: $spacing $spacing $spacing 0;
-                h3{
+                   padding: $spacing ($spacing * 2) $spacing 0;
+                  h3{
                     padding: ($spacing) 0;
+                    color: white;
                 }
-                ul{
+                ul{                        
                     list-style: none;
-                    a{
-                        text-decoration: none;
+                    padding-left: 0;
+                        a{                            
+                            color: $text_color;
+                            text-decoration: none;
                     }
                 }
-
-            }
-            p{
-                width: 50%;
+                }                
+                p{
+                   width: 50%;
             }
         }
     }
