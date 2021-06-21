@@ -1,7 +1,25 @@
 main{
     .bg-grey{
-        height: 500px;
         background-color: $bg_color2;
+        display: flex;
+        padding: ($spacing * 3) 0;
+        .my-card{
+            a{
+                text-decoration: none;
+                &:hover{
+                    p{
+                        color: $text_color3;
+                    }
+                }
+            }
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            p{
+                color: $text_color2;
+            }
+        }
     }
     .bg-blue{
         background-color: $bg_color1;
@@ -19,6 +37,7 @@ main{
                 p{
                     color: $text_color2;
                     padding: $spacing;
+                    padding-bottom: 0;
                 }
             }
         }

@@ -10,6 +10,7 @@ footer{
         background-image: url('/images/dc-logo-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 100% 50%;
         img{
             // overflow: hidden;
             // width: 800px;
@@ -18,10 +19,10 @@ footer{
         .footer-col{
             display: flex;
             div{
-                   padding: $spacing ($spacing * 2) $spacing 0;
+                   padding: $spacing ($spacing * 3) $spacing 0;
                   h3{
                     padding: ($spacing) 0;
-                    color: white;
+                    color: $text_color2;
                 }
                 ul{                        
                     list-style: none;

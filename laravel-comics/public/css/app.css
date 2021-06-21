@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
-  color: #464646;
   font-weight: 700;
 }
 
@@ -18,8 +17,10 @@
 }
 
 .blue_line p {
+  text-align: center;
   color: white;
   padding: 5px;
+  margin-bottom: 0;
 }
 
 nav {
@@ -37,6 +38,7 @@ nav img {
 nav ul {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -66,6 +68,7 @@ footer .bg-footer-img .bg-footer-logo {
   background-image: url("/images/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 100% 50%;
 }
 
 footer .bg-footer-img .footer-col {
@@ -73,12 +76,12 @@ footer .bg-footer-img .footer-col {
 }
 
 footer .bg-footer-img .footer-col div {
-  padding: 15px 30px 15px 0;
+  padding: 15px 45px 15px 0;
 }
 
 footer .bg-footer-img .footer-col div h3 {
   padding: 15px 0;
-  color: white;
+  color: #ffffff;
 }
 
 footer .bg-footer-img .footer-col div ul {
@@ -96,8 +99,26 @@ footer .bg-footer-img .footer-col p {
 }
 
 main .bg-grey {
-  height: 500px;
   background-color: #1c1c1c;
+  display: flex;
+  padding: 45px 0;
+}
+
+main .bg-grey .my-card a {
+  text-decoration: none;
+}
+
+main .bg-grey .my-card a:hover p {
+  color: #0282f9;
+}
+
+main .bg-grey .my-card img {
+  width: 200px;
+  height: 200px;
+}
+
+main .bg-grey .my-card p {
+  color: #ffffff;
 }
 
 main .bg-blue {
@@ -123,6 +144,7 @@ main .bg-blue .blue-menu div img {
 main .bg-blue .blue-menu div p {
   color: #ffffff;
   padding: 15px;
+  padding-bottom: 0;
 }
 
 main .load-more-btn {

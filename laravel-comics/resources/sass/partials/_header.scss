@@ -6,8 +6,10 @@
         justify-content: flex-end;
     }
     p{
+        text-align: center;
         color: white;
         padding: $spacing / 3;
+        margin-bottom: 0;
     }
 }
 nav{
@@ -22,6 +24,7 @@ nav{
     ul{
         display: flex;
         align-items: center;
+        margin-bottom: 0;
         list-style: none;
         a{
             text-decoration: none;

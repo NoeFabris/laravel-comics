@@ -1,18 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Dc Comics</title>
-</head>
-<body>
-    @include('partials/header')
-    @include('partials/main')
-    @include('partials/footer')
-</body>
-</html>
+@extends('layout.default')
+
+@section('page_title', 'DC Comics')
+
+@section('main')
+<main>
+
+    <section class='bg-grey'>
+
+        <div class='container'>
+
+                <div class="row">
+                    @foreach($comics as $key => $value)
+                        
+                        <div class='my-card col-2'>
+                            <a href="#">
+
+                                <img src="{{ $comics[$key]['thumb']}}" alt="">
+                                <p>{{$comics[$key]['title']}}</p>
+                        
+                            </a>
+                        </div>  
+
+                    @endforeach
+                </div>
+
+            <div class='load-more-btn'>
+                <button>LOAD MORE</button>
+            </div>
+
+        </div>
+
+    </section>
+    <section class='bg-blue'>
+
+        <div class='container blue-menu'>
+
+            <div>
+
+                <img src="{{ asset('images/buy-comics-digital-comics.png')}}" alt="">
+                <p>DIGITAL COMICS</p>
+
+            </div>
+            <div>
+
+                <img src="{{ asset('images/buy-comics-merchandise.png')}}" alt="">
+                <p>DC MERCHANDISE</p>
+
+            </div>
+            <div>
+
+                <img src="{{ asset('images/buy-comics-subscriptions.png')}}" alt="">
+                <p>SUBSCRIPTIONS</p>
+
+            </div>
+            <div>
+
+                <img src="{{ asset('images/buy-comics-shop-locator.png')}}" alt="">
+                <p>COMIC SHOP LOCATOR</p>
+
+            </div>
+            <div>
+
+                <img src="{{ asset('images/buy-dc-power-visa.svg')}}" alt="">
+                <p>DC POWER VISA</p>
+
+            </div>
+            
+        </div>
+    </section>
+
+</main>
+@endsection
