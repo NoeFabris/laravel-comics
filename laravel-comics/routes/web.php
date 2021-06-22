@@ -20,8 +20,16 @@ Route::get('/', function () {
 })->name('homepage');
 
 
-Route::get('/product', function () {
+Route::get('/product/{id}', function ($id) {
+    $comics = config('comics');
+
+    if (!is_numeric($id) || $id < 0 || $id > count($comics) - 1) {
+        abort(404);
+    }
+
+    $selectedComic = $comics[$id];
+
     // FILTRARE IL FUMETTO GIUSTO
     // $comic = FUMETTO GIUSTO
-    return view('product');
+    return view('product', ['comic' => $selectedComic]);
 })->name('product');

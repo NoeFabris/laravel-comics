@@ -13,7 +13,7 @@
                     @foreach($comics as $key => $value)
                         
                         <div class='my-card col-2'>
-                            <a href="#">
+                            <a href="/product/{{($comics[$key]['id']) - 1}}">
 
                                 <img src="{{ $comics[$key]['thumb']}}" alt="">
                                 <p>{{$comics[$key]['series']}}</p>
