@@ -1,3 +1,11 @@
+{{-- @php
+    function setLinkClass(...$pageNames){
+        $routeName = Request::route()->getName();
+
+        $contains = array_search;
+    }
+@endphp --}}
+
 <header>
 {{-- Blue line --}}
     <section class='blue_line'>

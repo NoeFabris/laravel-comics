@@ -16,7 +16,7 @@
                             <a href="#">
 
                                 <img src="{{ $comics[$key]['thumb']}}" alt="">
-                                <p>{{$comics[$key]['title']}}</p>
+                                <p>{{$comics[$key]['series']}}</p>
                         
                             </a>
                         </div>  
